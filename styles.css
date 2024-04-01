@@ -1,6 +1,14 @@
 #new-todo-form {
     display: flex;
     flex-direction: column;
+    text-align: center;
+    padding: 0 35rem;
+    margin-top: 1rem;
+  }
+
+  #todo-title {
+    font-size: 1.5rem;
+    font-family: montserrat;
   }
   
   #new-todo-form > * {
@@ -9,10 +17,13 @@
   
   #list {
     padding: 0;
+    text-align: center;
+    margin-top: 2.5rem;
   }
   
   .list-item {
     list-style: none;
+    margin: .3rem 0;
   }
   
   .list-item-label:hover,
@@ -29,9 +40,27 @@
     text-decoration: line-through;
     color: #AAA;
   }
+
+  #todo-input {
+    margin: 1.2rem 0 1rem 0;
+    height: 1.5rem;
+  }
   
   [data-button-delete] {
     margin-left: .5rem;
+  }
+
+  [data-button-submit] {
+    width: 7rem;
+    height: 2rem;
+    align-self: center;
+    border-radius: .4em;
+    border: none;
+  }
+
+  [data-button-submit]:hover {
+    background-color: goldenrod;
+    color: white;
   }
   
   button {
